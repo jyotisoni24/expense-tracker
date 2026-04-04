@@ -1,0 +1,114 @@
+Build a modern, responsive frontend-only Expense Tracker Dashboard using React and Tailwind CSS.
+
+PROJECT REQUIREMENTS:
+
+1. GENERAL:
+- Use React (functional components + hooks)
+- Use Tailwind CSS for styling
+- Use a clean folder structure (components, pages, utils)
+- Use mock data (no backend required)
+- Ensure fully responsive design (desktop + tablet + mobile)
+
+2. LAYOUT:
+- Create a LEFT SIDEBAR navigation (fixed)
+- Sidebar items:
+  - Dashboard
+  - Transactions
+  - Insights
+- Add icons for each menu item
+- Add a top-right profile section (admin avatar)
+
+- Main content area should adjust based on sidebar
+
+3. DARK MODE:
+- Implement dark mode toggle
+- Persist theme using localStorage
+- Smooth transition between light and dark
+
+4. DASHBOARD PAGE:
+- Create 3 summary cards:
+  - Total Balance
+  - Total Income (green)
+  - Total Expense (red)
+
+- Add a line chart:
+  - Show income vs expenses over time
+  - Use Recharts or Chart.js
+
+- Add filters:
+  - Filter by type (income/expense)
+  - Filter by category
+  - Date range picker
+
+5. TRANSACTIONS PAGE:
+- Add search bar (search by name/category)
+- Add filter and sort options
+- Add "Download CSV" button (export mock data)
+
+- Display transaction list:
+  - Date
+  - Category (with icon)
+  - Amount
+  - Type (income/expense)
+  - Edit button (only visible for admin)
+
+- Color coding:
+  - Income → green
+  - Expense → red
+
+- Add hover effects and clean UI
+
+6. INSIGHTS PAGE:
+- Show:
+  - Highest spending category
+  - Pie chart (category distribution)
+  - Bar chart (monthly comparison)
+  - Smart insight card:
+    Example: "You spent 25% more than last month"
+
+7. ROLE-BASED UI:
+- Create two roles:
+  - Admin
+  - Viewer
+
+- Admin:
+  - Can see "Add Transaction" button
+  - Can edit transactions
+
+- Viewer:
+  - Cannot see edit/add options
+  - Only view data
+
+- Simulate role using a variable
+
+8. ADD TRANSACTION MODAL:
+- Popup modal form with:
+  - Amount
+  - Type (income/expense)
+  - Category
+  - Date
+  - Notes
+- Save updates mock state
+
+9. UI/UX IMPROVEMENTS:
+- Use modern card design with shadows and rounded corners
+- Use icons (Lucide React or Heroicons)
+- Add smooth transitions and hover effects
+- Add empty state UI ("No transactions yet")
+- Add loading skeletons
+
+10. BONUS FEATURES:
+- Add category budget tracking:
+  - Show progress bar (budget vs spent)
+- Add tags for transactions (optional)
+- Add reusable components (Card, Button, Modal, Sidebar)
+
+11. CODE QUALITY:
+- Use reusable components
+- Keep code clean and modular
+- Use proper naming conventions
+
+OUTPUT:
+- Fully working React frontend app
+- Clean UI similar to modern fintech dashboards
+- Responsive and visually appealing
